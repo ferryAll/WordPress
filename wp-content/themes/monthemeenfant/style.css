@@ -8,3 +8,9 @@ Template: twentyseventeen
 .site-title {
     color: green;
 }
+
+
+.entry-title a {
+    color: yellowgreen;
+    text-decoration: none;
+    margin-left: -2px;
