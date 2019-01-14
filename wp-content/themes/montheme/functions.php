@@ -3,8 +3,7 @@ function display_hello()
 {
     echo 'Bonjour tout le monde';
 }
-?> 
-<?php
+
 add_action('widgets_init','monplugin_add_sidebar');
 function monplugin_add_sidebar()
 {
@@ -24,4 +23,5 @@ function monplugin_add_menu()
 {
  register_nav_menu('main_menu', 'Menu principal');
 }
-?>
+
+

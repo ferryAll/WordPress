@@ -7,10 +7,18 @@ display_hello();
 ?>
 
 <h1>Mes articles</h1>
+<hr/>
 <?php
 while (have_posts()) :
- the_post();
+    the_title();
+    the_post();
+ 
  the_content();
+ echo "<hr/>";
+ comments_template();
+ 
+ comment_form();
+ echo "<hr/>";
 endwhile; ?>
 
 
