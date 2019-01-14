@@ -1,0 +1,10 @@
+/*
+Theme Name: Mon template hérité
+Template: twentyseventeen
+*/
+
+@import url("../twentyseventeen/style.css");
+
+.site-title {
+    color: green;
+}
