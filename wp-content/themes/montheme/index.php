@@ -1,5 +1,5 @@
 <?php
 
-
+display_hello();
 
 ?>
