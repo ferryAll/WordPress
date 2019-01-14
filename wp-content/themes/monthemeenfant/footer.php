@@ -20,7 +20,7 @@
 			<div class="wrap">
 				<?php
 				get_template_part( 'template-parts/footer/footer', 'widgets' );
-
+				
 				if ( has_nav_menu( 'social' ) ) : ?>
 					<nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Social Links Menu', 'twentyseventeen' ); ?>">
 						<?php
