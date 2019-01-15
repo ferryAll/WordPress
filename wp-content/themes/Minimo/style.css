@@ -6,31 +6,3 @@ Author URI: http://monsiteweb.com
 Description: Notre premier thème WordPress !
 */
 
-h3 {
-    margin-left: 0.67em 0;
-    color: #626262;
-    font-family: "Playfair Display";
-  }
-h5 {
-      color: #b4ad9e;
-      margin-left: 0.67em 0;
-      font-family: "Playfair Display";
-  }
-p {
-    margin: 0.67em 0;
-    font-family: "Ubuntu", sans-serif;
-    margin-left: 0.67em 0;
-    color: #626262;
-  }
-.main_image{
-    width: 100%;
-  }
-  .Leave{
-    color: #b4ad9e;
-    font-family: "Playfair Display";
-  }
-
-  .c{
-  background-color: #F0F0F0;
-  width : 100%;
-}
