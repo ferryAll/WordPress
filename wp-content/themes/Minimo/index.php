@@ -13,7 +13,6 @@
         </h5>
         <h3><?php the_title(); ?></h3>
         <?php the_content(); ?>
-        <?php the_author(); ?>
         </div>
 
 <?php
@@ -22,7 +21,7 @@ endwhile;
 
 </div>
 
-<input type= "button" value= "Load More"/>
+
     </div>
         <div class="c">
             <div>
@@ -31,10 +30,26 @@ endwhile;
                     <input type= "button" value= "Submit"/>
             </div>
         </div>
+        <div class="grid-x">
+            <?php
+             while (have_posts()) : the_post();
+             ?>
+            <div class="cell small-5">
+         <?php the_post_thumbnail(); ?>
+         <h5>  <?php 
+              foreach((get_the_category()) as $cat) { 
+             echo $cat->cat_name . ' '; 
+           } ?> 
+            </h5>
+         <h3><?php the_title(); ?></h3>
+         <?php the_content(); ?>
+         </div>
+<?php
+endwhile;
+?>
 
-
-    
-
+    </div>
+    <input type= "button" value= "Load More"/>
 
     
 <?php get_footer(); ?>
