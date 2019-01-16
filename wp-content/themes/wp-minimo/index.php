@@ -1,6 +1,6 @@
 
+<?php get_header(); ?>
 
-<?php get_header();?>
 
 <div class="callout large primary">
 <div class="row column text-center">
@@ -10,7 +10,7 @@
 </div>
 
 <div class="row medium-8 large-7 columns">
-    
+<?php get_header();?>
 <?php
 while (have_posts()) : the_post();
 ?>

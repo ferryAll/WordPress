@@ -8,6 +8,7 @@
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/vendor/foundation.js"></script>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/app.js"></script>
     </div>
+
     <?php wp_footer(); ?>
   </body>
 </html>

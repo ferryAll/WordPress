@@ -1,3 +1,5 @@
+<?php wp_head(); ?>
+
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
@@ -9,7 +11,7 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/foundation.css">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/app.css">
 
-    <?php wp_head(); ?>
+    
   </head>
 
   <body> 
