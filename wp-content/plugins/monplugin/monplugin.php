@@ -17,6 +17,7 @@ function monplugin_change_my_title($title) {
 register_activation_hook(__FILE__, array('Mon_plugin_Newsletter', 'install'));
 register_uninstall_hook(__FILE__, array('Monplugin_Newsletter', 'uninstall'));
 
+
 class Monplugin_Plugin
 {
     public function __construct()
@@ -24,10 +25,12 @@ class Monplugin_Plugin
     include_once plugin_dir_path( __FILE__ ).'/Mon_plugin_Newsletter.php';
     add_action('admin_menu', array($this, 'add_admin_menu'));
     new Mon_plugin_Newsletter();
+    include_once plugin_dir_path( __FILE__ ).'Monplugin_Recent.php';
+ new Monplugin_Recent();
     }
     public function add_admin_menu()
 {
- add_menu_page('Newsletter', 'Newsletter', 'manage_options', 'monplugin', array($this,
+ add_menu_page('Mon plugin', 'Mon plugin', 'manage_options', 'monplugin', array($this,
 'menu_html'));
 }
 
